@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="registrationForm">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" required minlength="4" pattern="[A-Za-z0-9]{4,}" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" required minlength="12" />
+        </div>
+        <div>
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" required />
+        </div>
+        <div>
+          <input type="checkbox" id="terms" required />
+          <label for="terms">I accept the terms and conditions</label>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+      
+      <form id="loginForm">
+        <div>
+          <label for="loginUsername">Username:</label>
+          <input type="text" id="loginUsername" required />
+        </div>
+        <div>
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" required />
+        </div>
+        <div>
+          <input type="checkbox" id="keepLoggedIn" />
+          <label for="keepLoggedIn">Keep me logged in</label>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      
+      <div id="errorDisplay"></div>
+      <div id="successDisplay"></div>
+      <script src="index.js"></script>
+</body>
+</html>
